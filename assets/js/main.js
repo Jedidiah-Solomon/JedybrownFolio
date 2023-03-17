@@ -231,20 +231,19 @@
 
 
 
-/// This is the JavaScript code to trigger the popup alert
+// This is the JavaScript code to trigger the popup alert
 window.addEventListener("scroll", startPopup);
 
-//Created the two functions startPopup and closePopup
-function startPopup(){
-  if (window.pageYOffset > 50 && sessionStorage.getItem('popupDisplayed') !== 'true') {
+// Craeted two functions startPopup and closePopup
+  function startPopup() {
+  if (window.pageYOffset > 500 && sessionStorage.getItem('popupDisplayed') !== 'true') {
     document.querySelector(".popup").style.display = "block";
     sessionStorage.setItem('popupDisplayed', 'true');
-  } else {
-    document.querySelector(".popup").style.display = "none";
   }
-}
+};
 
 function closePopup() {
   document.querySelector(".popup").style.display = "none";
   sessionStorage.setItem('popupDisplayed', 'true');
 }
+

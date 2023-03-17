@@ -1611,28 +1611,37 @@ a:hover {
   display: none;
   position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  right: 100px;
+  width: 20%;
   background-color: #f1f1f1;
   padding: 20px;
-  text-align: center;
+  text-align:left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  z-index: 9999;
 }
 
+.popup:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 
 .popup h3 {
   font-size: 24px;
   margin-bottom: 6px;
+  text-align: center;
 }
 
 .popup p {
   font-size: 18px;
   margin: 0;
+  font-weight: bold;
 }
 
-.popup ul {
+.popup ol {
   font-size: 14px;
-  list-style-type: none;
+ /* list-style-type: none; */
   margin: 0;
   padding: 0;
  
@@ -1648,6 +1657,12 @@ a:hover {
   display: inline-block;
   font-size: 16px;
   margin-top: 10px;
+  margin-left: 40%;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+.popup button:hover {
+  opacity: 0.5;
 }
      
