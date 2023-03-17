@@ -1603,4 +1603,51 @@ a:hover {
   }
 }
 
-        
+   
+
+
+/* This is for the popup alert */
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.popup h3 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.popup p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.popup ul {
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.popup button {
+  background-color: #0078ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+     
