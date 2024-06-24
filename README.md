@@ -4,7 +4,8 @@
 
 1. Frontend: HTML5, Bootstrap, CSS3, React JS, JavaScript, JQUERY
 2. Backend: Express.Js, SQL, Python, PHP, Appwrite
-3. CMS: WordPress
+3. CMS: WordPress, Wix, Shopify
+4. Cloud Management: Hosting, DNS and all Cloud Seervices.
 
 ## About Me
 
