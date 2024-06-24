@@ -53,7 +53,7 @@ WordPress: Customizing and managing website content with ease.
 ## Contact
 
 Email: [onwubikojedidiah@gmail.com] <br>
-[Your LinkedIn Profile](https://www.linkedin.com/in/jedidiahonwubiko/) <br>
+[LinkedIn Profile](https://www.linkedin.com/in/jedidiahonwubiko/) <br>
 [GitHub Profile](https://github.com/Jedidiah-Solomon)
 
 ## Portfolio URL :clap:
