@@ -263,7 +263,6 @@ function closePopup() {
 $(function () {
   $("#contact-form").on("submit", function (e) {
     e.preventDefault();
-    console.log("Email sent succefully");
 
     $.ajax({
       url: "https://formspree.io/f/xrgnjzpb",
@@ -271,12 +270,13 @@ $(function () {
       data: $(this).serialize(),
       dataType: "json",
       success: function (response) {
+        console.log("Email sent succefully");
         alert("Form submitted successfully!");
         $("#contact-form")[0].reset();
         window.location.href = "/";
       },
       error: function (err) {
-        alert("An error occurred. Please try again.");
+        alert("An error occurred. Please try again!");
       },
     });
   });
