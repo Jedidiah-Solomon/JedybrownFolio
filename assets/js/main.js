@@ -281,3 +281,8 @@ $(function () {
     });
   });
 });
+
+$(function () {
+  let currentYear = new Date().getFullYear();
+  $("#copy-year").text(currentYear);
+});
