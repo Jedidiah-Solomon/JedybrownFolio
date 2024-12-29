@@ -2,22 +2,23 @@
 
 ## About Me
 
-I am a dedicated and detail-oriented software developer with a strong focus on delivering customer-centric solutions. My expertise spans across frontend technologies like React, TypeScript, and TailwindCSS, and backend technologies like Node.js, Express.js, and Firebase. I aim to create dynamic user interfaces and efficient, scalable backend systems that align with business objectives, ensuring a seamless and user-friendly experience for clients and end-users alike.
+I am a dedicated and detail-oriented software developer specializing in creating custom software solutions and applications for small businesses, medium-sized enterprises, and individuals. My primary focus is on delivering customer-centric products that meet unique business needs and provide seamless user experiences. By combining innovative design with scalable and efficient backend systems, I help clients achieve their goals through technology-driven solutions that are intuitive, reliable, and aligned with their objectives.
 
 ## Technical Skills
 
 ### Frontend Development:
 
 1. HTML5: Crafting semantic and accessible web content.
-2. Bootstrap: Building responsive and mobile-first websites.
-3. CSS3: Styling modern web applications with advanced techniques.
-4. React JS: Developing dynamic and high-performance user interfaces with component-based architecture
-5. JavaScript: Creating interactive web experiences using modern ES6+ features.
-6. JQuery: Simplifying HTML DOM tree traversal and manipulation.
-7. TailwindCSS: Utilizing a utility-first CSS framework to create modern and efficient designs.
-8. React Native: Building cross-platform mobile applications using JavaScript and React.
-9. Webpack: Bundling JavaScript modules and assets to optimize performance and streamline development.
-10. TypeScript: Bringing the power of strong typing to JavaScript, ensuring that my code is more robust, scalable, and easier to debug.
+2. CSS3: Styling modern web applications with advanced techniques.
+3. SASS: Extending CSS with variables, mixins, and nested rules for efficient styling.
+4. Bootstrap: Building responsive and mobile-first websites.
+5. TailwindCSS: Utilizing a utility-first CSS framework to create modern and efficient designs.
+6. JavaScript: Creating interactive web experiences using modern ES6+ features.
+7. jQuery: Simplifying HTML DOM tree traversal and manipulation.
+8. React JS: Developing dynamic and high-performance user interfaces with component-based architecture.
+9. React Native: Building cross-platform mobile applications using JavaScript and React.
+10. Webpack: Bundling JavaScript modules and assets to optimize performance and streamline development
+11. Elementor Pro: Expertise in building advanced and customized WordPress sites with Elementor Pro.
 
 ### Backend Development:
 
@@ -25,8 +26,8 @@ I am a dedicated and detail-oriented software developer with a strong focus on d
 2. Express.js: Building fast, lightweight, and scalable server-side applications.
 3. MySQL & MongoDB: Managing and querying relational (MySQL) and NoSQL (MongoDB) databases.
 4. Redis: Leveraging in-memory data structure storage for caching and message brokering.
-5. Appwrite: Utilizing Backend-as-a-Service (BaaS) for managing backend services and infrastructure.
-6. Firebase: Providing a suite of backend services like authentication, real-time databases, and hosting.
+5. Firebase: Providing a suite of backend services like authentication, real-time databases, and hosting.
+6. Appwrite: Utilizing Backend-as-a-Service (BaaS) for managing backend services and infrastructure.
 
 ### DevOps / CI/CD:
 
@@ -37,6 +38,7 @@ I am a dedicated and detail-oriented software developer with a strong focus on d
 5. Snyk: Monitoring and fixing security vulnerabilities in project's dependencies.
 6. Codacy: Code quality automation tool that helps me track and enforce standards, ensuring consistency and identifying potential issues in codebases.
 7. Debugging: I utilize browser developer tools, VSCode, and Node.js debugging for efficient troubleshooting and issue resolution in code during development.
+8. Firebase Tools: Using Firebase CLI for deploying, debugging, and monitoring apps.
 
 ### Content Management Systems:
 
@@ -90,3 +92,22 @@ Email: [onwubikojedidiah@gmail.com] <br>
 [JedybrownFolio](https://jedidiah-solomon.github.io/JedybrownFolio/)
 
 <img alt="My pics" src="https://user-images.githubusercontent.com/121108148/215294524-739aad63-9d80-4d8f-8273-c0d633853d5e.jpg" width="200" height="200">
+
+### License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
+
+You are free to:
+
+- Share: Copy and redistribute the material in any medium or format.
+- Adapt: Remix, transform, and build upon the material.
+
+##### Under the following terms:
+
+- Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- NonCommercial: You may not use the material for commercial purposes.
+- License Details: [Creative Commons License](./LICENSE)
+
+### Disclaimer:
+
+**Feel free to explore and adapt ideas from this project, but please do not replicate it directly.**

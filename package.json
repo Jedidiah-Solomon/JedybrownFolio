@@ -1,0 +1,12 @@
+{
+  "name": "jedybrownfolio",
+  "version": "1.0.0",
+  "description": "I am a dedicated and detail-oriented software developer with a strong focus on delivering customer-centric solutions. My expertise spans across frontend technologies like React, TypeScript, and TailwindCSS, and backend technologies like Node.js, Express.js, and Firebase. I aim to create dynamic user interfaces and efficient, scalable backend systems that align with business objectives, ensuring a seamless and user-friendly experience for clients and end-users alike.",
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
