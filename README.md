@@ -2,6 +2,8 @@
 
 ## About Me
 
+![Static Badge](https://img.shields.io/badge/Jedybrown-Software%20Developer-blue)
+
 I am a dedicated and detail-oriented software developer specializing in creating custom software solutions and applications for small businesses, medium-sized enterprises, and individuals. My primary focus is on delivering customer-centric products that meet unique business needs and provide seamless user experiences. By combining innovative design with scalable and efficient backend systems, I help clients achieve their goals through technology-driven solutions that are intuitive, reliable, and aligned with their objectives.
 
 ## Technical Skills
