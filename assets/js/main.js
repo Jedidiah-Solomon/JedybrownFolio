@@ -268,6 +268,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       if (response.ok) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "custom_form_submit",
+          form_id: "contact-form",
+        });
+
         messageBox.classList.add("text-success");
         messageBox.style.textAlign = "center";
         messageBox.textContent = "Message sent successfully! Thank you.";
