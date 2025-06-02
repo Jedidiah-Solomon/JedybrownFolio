@@ -27,6 +27,16 @@ function createPopup() {
               <p>Get USD Card, USA Bank account and transact in Naira</p>
             </div>
           </a>
+
+          <a href="https://www.fiverr.com/s/BRrrK31" target="_blank" class="referral-link">
+            <img src="assets/img/fiverr-logo.png" alt="Cleva Logo" class="referral-logo">
+            <div class="referral-text">
+              <h3>Fiverr</h3>
+              <p>Get your custom solution using my Fiverr Gig</p>
+            </div>
+          </a>
+
+
         </div>
       </div>
       <div class="popup-footer">
