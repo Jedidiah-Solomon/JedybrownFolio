@@ -241,48 +241,69 @@
   new PureCounter();
 })();
 
-// This is the JavaScript code to trigger the popup alert
-window.addEventListener("scroll", startPopup);
+// Contact form
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const messageBox = document.getElementById("form-message");
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn.textContent;
 
-// Craeted two functions startPopup and closePopup
-function startPopup() {
-  if (
-    window.pageYOffset > 500 &&
-    sessionStorage.getItem("popupDisplayed") !== "true"
-  ) {
-    document.querySelector(".popup").style.display = "block";
-    sessionStorage.setItem("popupDisplayed", "true");
-  }
-}
-
-function closePopup() {
-  document.querySelector(".popup").style.display = "none";
-  sessionStorage.setItem("popupDisplayed", "true");
-}
-
-$(function () {
-  $("#contact-form").on("submit", function (e) {
+  form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    $.ajax({
-      url: "https://formspree.io/f/xrgnjzpb",
-      method: "POST",
-      data: $(this).serialize(),
-      dataType: "json",
-      success: function (response) {
-        console.log("Email sent succefully");
-        alert("Form submitted successfully!");
-        $("#contact-form")[0].reset();
-        window.location.href = "/";
-      },
-      error: function (err) {
-        alert("An error occurred. Please try again!");
-      },
-    });
+    messageBox.textContent = "";
+    messageBox.className = "";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        messageBox.classList.add("text-success");
+        messageBox.style.textAlign = "center";
+        messageBox.textContent = "Message sent successfully! Thank you.";
+        form.reset();
+      } else {
+        const errorData = await response.json();
+        if (errorData.errors) {
+          messageBox.classList.add("text-danger");
+          messageBox.style.textAlign = "center";
+          messageBox.textContent = errorData.errors
+            .map((error) => error.message)
+            .join(", ");
+        } else {
+          messageBox.classList.add("text-danger");
+          messageBox.style.textAlign = "center";
+          messageBox.textContent =
+            "Oops! There was a problem submitting your form.";
+        }
+      }
+    } catch (err) {
+      console.log(err);
+      messageBox.classList.add("text-danger");
+      messageBox.style.textAlign = "center";
+      messageBox.textContent = "Network error. Please try again.";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalBtnText;
+    }
   });
 });
 
-$(function () {
-  let currentYear = new Date().getFullYear();
-  $("#copy-year").text(currentYear);
+// Year
+document.addEventListener("DOMContentLoaded", function () {
+  const currentYear = new Date().getFullYear();
+  const copyYearEl = document.getElementById("copy-year");
+  if (copyYearEl) {
+    copyYearEl.textContent = currentYear;
+  }
 });
