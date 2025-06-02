@@ -16,7 +16,7 @@ function createPopup() {
             <img src="assets/img/ghl-logo.png" alt="GoHighLevel Logo" class="referral-logo">
             <div class="referral-text">
               <h3>GoHighLevel</h3>
-              <p>All-in-one marketing platform to grow your business</p>
+              <p>All-in-one marketing platform to grow your business like a boss.</p>
             </div>
           </a>
           
@@ -24,7 +24,7 @@ function createPopup() {
             <img src="assets/img/cleva-logo.png" alt="Cleva Logo" class="referral-logo">
             <div class="referral-text">
               <h3>Cleva</h3>
-              <p>Streamline your workflow with intelligent automation</p>
+              <p>Get USD Card, USA Bank account and transact in Naira</p>
             </div>
           </a>
         </div>
