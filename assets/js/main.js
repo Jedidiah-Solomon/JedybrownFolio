@@ -293,11 +293,23 @@ document.addEventListener("DOMContentLoaded", function () {
             "Oops! There was a problem submitting your form.";
         }
       }
+
+      // Clear message after 3 seconds
+      setTimeout(() => {
+        messageBox.textContent = "";
+        messageBox.className = "";
+      }, 3000);
     } catch (err) {
       console.log(err);
       messageBox.classList.add("text-danger");
       messageBox.style.textAlign = "center";
       messageBox.textContent = "Network error. Please try again.";
+
+      // Clear message after 3 seconds
+      setTimeout(() => {
+        messageBox.textContent = "";
+        messageBox.className = "";
+      }, 3000);
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = originalBtnText;
