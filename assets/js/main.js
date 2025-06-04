@@ -294,7 +294,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      // Clear message after 3 seconds
       setTimeout(() => {
         messageBox.textContent = "";
         messageBox.className = "";
@@ -305,7 +304,6 @@ document.addEventListener("DOMContentLoaded", function () {
       messageBox.style.textAlign = "center";
       messageBox.textContent = "Network error. Please try again.";
 
-      // Clear message after 3 seconds
       setTimeout(() => {
         messageBox.textContent = "";
         messageBox.className = "";
