@@ -12,7 +12,7 @@ function createPopup() {
           <p>Check out these amazing tools that I personally recommend:</p>
           
           <div class="referral-links">
-            <a href="https://www.gohighlevel.com/?fp_ref=jedybrown" target="_blank" class="referral-link">
+            <a href="https://www.gohighlevel.com/?fp_ref=jedybrown" target="_blank" class="referral-link"  data-referral="gohighlevel">
               <img src="assets/img/ghl-logo.png" alt="GoHighLevel Logo" class="referral-logo">
               <div class="referral-text">
                 <h3>GoHighLevel</h3>
@@ -20,7 +20,7 @@ function createPopup() {
               </div>
             </a>
             
-            <a href="https://getcleva.com/refer/JEDI912" target="_blank" class="referral-link">
+            <a href="https://getcleva.com/refer/JEDI912" target="_blank" class="referral-link" data-referral="cleva">
               <img src="assets/img/cleva-logo.png" alt="Cleva Logo" class="referral-logo">
               <div class="referral-text">
                 <h3>Cleva</h3>
@@ -28,7 +28,7 @@ function createPopup() {
               </div>
             </a>
 
-            <a href="https://www.fiverr.com/s/BRrrK31" target="_blank" class="referral-link">
+            <a href="https://www.fiverr.com/s/BRrrK31" target="_blank" class="referral-link" data-referral="fiverr">
               <img src="assets/img/fiverr-logo.png" alt="Cleva Logo" class="referral-logo">
               <div class="referral-text">
                 <h3>Fiverr</h3>
