@@ -1674,6 +1674,44 @@ button[type="submit"] {
   opacity: 0.5;
 }
 
+/* Youtube section */
+.youtube-section {
+  padding: 60px 0;
+  background: rgba(10, 25, 47, 0.05);
+}
+
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 136, 255, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-effect:hover::after {
+  opacity: 1;
+}
+
+.youtube-embed {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0, 136, 255, 0.2);
+}
+
+.youtube-embed:hover {
+  transform: translateY(-5px);
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
