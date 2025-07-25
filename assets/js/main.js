@@ -323,3 +323,35 @@ document.addEventListener("DOMContentLoaded", function () {
     copyYearEl.textContent = currentYear;
   }
 });
+
+// Workflow Carousel Navigation
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".workflow-carousel");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+  const workflowItems = document.querySelectorAll(".workflow-item");
+  const itemWidth = workflowItems[0].offsetWidth + 20;
+
+  prevBtn.addEventListener("click", function () {
+    carousel.scrollBy({ left: -itemWidth, behavior: "smooth" });
+  });
+
+  nextBtn.addEventListener("click", function () {
+    carousel.scrollBy({ left: itemWidth, behavior: "smooth" });
+  });
+
+  // Hide/show buttons based on scroll position
+  carousel.addEventListener("scroll", function () {
+    prevBtn.style.display = carousel.scrollLeft <= 10 ? "none" : "flex";
+    nextBtn.style.display =
+      carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 10
+        ? "none"
+        : "flex";
+  });
+
+  // Initial state
+  prevBtn.style.display = "none";
+  if (carousel.scrollWidth <= carousel.clientWidth) {
+    nextBtn.style.display = "none";
+  }
+});

@@ -1741,3 +1741,157 @@ button[type="submit"] {
     width: 60%;
   }
 }
+
+/* Workflow Gallery Styles */
+.workflow-gallery {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.workflow-carousel-container {
+  position: relative;
+  padding: 0 40px;
+}
+
+.workflow-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding: 20px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.workflow-carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.workflow-item {
+  flex: 0 0 calc(33.333% - 20px);
+  scroll-snap-align: start;
+  min-width: 300px;
+}
+
+.workflow-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.workflow-card:hover {
+  transform: translateY(-5px);
+}
+
+.workflow-img-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.workflow-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.workflow-card:hover .workflow-img-container img {
+  transform: scale(1.05);
+}
+
+.platform-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.n8n-badge {
+  background-color: #13b9ff;
+}
+
+.make-badge {
+  background-color: #00c2a4;
+}
+
+.zapier-badge {
+  background-color: #ff4a00;
+}
+
+.ghl-badge {
+  background-color: #6c5ce7;
+}
+
+.workflow-content {
+  padding: 20px;
+}
+
+.workflow-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.workflow-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.workflow-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.workflow-carousel-btn:hover {
+  background: #0078ff;
+  color: white;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .workflow-item {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  .workflow-carousel-container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .workflow-item {
+    flex: 0 0 100%;
+  }
+}
