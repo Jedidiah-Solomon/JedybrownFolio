@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Resource Access</title>
+
+    <!-- Choices.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/youtube-resources.css" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <section class="resource-section">
+      <div class="form-card">
+        <div class="form-image">
+          <img
+            src="../assets/img/youtube_form_banner.png"
+            alt="Exclusive Resources"
+          />
+        </div>
+
+        <div class="form-body">
+          <h2>🎁 Get Free Resources</h2>
+          <p>
+            Enter your email and choose your category to access exclusive files
+            shared in my YouTube video.
+          </p>
+
+          <form
+            id="resource-form"
+            action="https://formspree.io/f/xrgnjzpb"
+            method="POST"
+          >
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <select name="resource_type" id="resource_type" required>
+                <option value="">Select Resource Type</option>
+                <option value="stop-using-whatsApp-api-use-evolution-api">
+                  Stop Using WhatsApp API! Use Evolution API on Cloud Station
+                  for N8N Chatbot & Automation
+                </option>
+                <option value="wbizTool-whatsApp-automation-review">
+                  WbizTool WhatsApp Automation Review — Best Alternative to
+                  WhatsApp Business API - AI Agent and N8N
+                </option>
+              </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Get Access</button>
+          </form>
+
+          <div id="form-message" class="message-box"></div>
+
+          <!-- Follow Me -->
+          <div class="follow-me">
+            <h4>Follow Me</h4>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.youtube.com/@creativecoderjed"
+                  class="social-media-btn"
+                  target="_blank"
+                  title="YouTube"
+                >
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://web.facebook.com/jedidiah.solomon.onwubiko"
+                  class="social-media-btn"
+                  target="_blank"
+                  title="Facebook"
+                >
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/jedidiahonwubiko/"
+                  class="social-media-btn"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/OnwubikoSolomo2"
+                  class="social-media-btn"
+                  target="_blank"
+                  title="X (Twitter)"
+                >
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jedidiah-onwubiko-8346491a8/"
+                  class="social-media-btn"
+                  target="_blank"
+                  title="LinkedIn"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/+2348136474717"
+                  class="social-media-btn"
+                  target="_blank"
+                  title="WhatsApp"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choices.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="../assets/js/youtube-resources.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const choices = new Choices("#resource_type", {
+          searchEnabled: true,
+          itemSelectText: "",
+          shouldSort: false,
+        });
+      });
+    </script>
+  </body>
+</html>
