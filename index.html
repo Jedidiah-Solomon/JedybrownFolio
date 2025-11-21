@@ -1311,11 +1311,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                             </div>
                           </div>
+
                           <div class="col-md-12">
                             <div class="form-group">
                               <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
                           </div>
+                          <!-- CLOUDFLARE TURNSTILE  -->
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <div class="cf-turnstile" data-sitekey="0x4AAAAAACCIjhwvKQQ8wHpR" data-theme="light"></div>
+                            </div>
+                          </div>
+                          <!-- END TURNSTILE CODE -->
+
                           <div class="col-md-12 text-center mt-2">
                             <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                           </div>
@@ -1404,6 +1413,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   
+
+  <!-- Cloudflare Turnstile -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
   <!-- Template Main JS File -->
    

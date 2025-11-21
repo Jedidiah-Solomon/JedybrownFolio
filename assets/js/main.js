@@ -253,6 +253,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     messageBox.textContent = "";
     messageBox.className = "";
+
+    const turnstileResponse = document.querySelector(
+      '[name="cf-turnstile-response"]'
+    );
+    if (!turnstileResponse || !turnstileResponse.value) {
+      messageBox.classList.add("text-danger");
+      messageBox.style.textAlign = "center";
+      messageBox.textContent =
+        "Please complete the CAPTCHA verification before sending.";
+
+      setTimeout(() => {
+        messageBox.textContent = "";
+        messageBox.className = "";
+      }, 3000);
+      return;
+    }
+
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 
@@ -277,7 +294,11 @@ document.addEventListener("DOMContentLoaded", function () {
         messageBox.classList.add("text-success");
         messageBox.style.textAlign = "center";
         messageBox.textContent = "Message sent successfully! Thank you.";
+
         form.reset();
+        if (window.turnstile) {
+          window.turnstile.reset();
+        }
       } else {
         const errorData = await response.json();
         if (errorData.errors) {
@@ -297,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
         messageBox.textContent = "";
         messageBox.className = "";
-      }, 3000);
+      }, 5000);
     } catch (err) {
       console.log(err);
       messageBox.classList.add("text-danger");
@@ -307,7 +328,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
         messageBox.textContent = "";
         messageBox.className = "";
-      }, 3000);
+      }, 5000);
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = originalBtnText;
