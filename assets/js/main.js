@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
       messageBox.classList.add("text-danger");
       messageBox.style.textAlign = "center";
       messageBox.textContent =
-        "Please complete the CAPTCHA verification before sending.";
+        "Please complete the CAPTCHA verification before sending...";
 
       setTimeout(() => {
         messageBox.textContent = "";

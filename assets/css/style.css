@@ -1879,6 +1879,18 @@ button[type="submit"] {
   right: 0;
 }
 
+/* Cloudflare Turnstile Styling */
+.cf-turnstile {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+  min-height: 65px;
+}
+
+.form-group .cf-turnstile {
+  justify-content: center !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .workflow-item {
