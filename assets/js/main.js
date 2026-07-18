@@ -245,6 +245,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
   const messageBox = document.getElementById("form-message");
+  if (!form || !messageBox) return;
   const submitBtn = form.querySelector('button[type="submit"]');
   const originalBtnText = submitBtn.textContent;
 
@@ -345,12 +346,50 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Scroll reveal animations
+document.addEventListener("DOMContentLoaded", function () {
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  const revealTargets = document.querySelectorAll(
+    ".title-box, .service-box, .work-box, .timeline-item, .card-blog, .workflow-item, .counter-box, .about-mf .box-shadow-full"
+  );
+
+  if (!revealTargets.length) return;
+
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    revealTargets.forEach((el) => el.classList.add("revealed"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  revealTargets.forEach((el, index) => {
+    el.classList.add("reveal-on-scroll");
+    // Stagger siblings slightly for a cascading effect
+    el.style.transitionDelay = (index % 3) * 0.12 + "s";
+    observer.observe(el);
+  });
+});
+
 // Workflow Carousel Navigation
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".workflow-carousel");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
   const workflowItems = document.querySelectorAll(".workflow-item");
+  if (!carousel || !prevBtn || !nextBtn || !workflowItems.length) return;
   const itemWidth = workflowItems[0].offsetWidth + 20;
 
   prevBtn.addEventListener("click", function () {
