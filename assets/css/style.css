@@ -392,6 +392,12 @@ a:hover {
   animation: animate-preloader 1s linear infinite;
 }
 
+#preloader.preloader-disabled,
+#preloader.preloader-disabled:before {
+  display: none;
+  animation: none;
+}
+
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);

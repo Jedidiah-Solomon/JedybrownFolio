@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -214,8 +214,8 @@
       <div class="contact-info">
         If you have any questions before our meeting, feel free to reach out
         at<br />
-        <a href="mailto:onwubikojedidiah@gmail.com"
-          >onwubikojedidiah@gmail.com</a
+        <a href="mailto:contact@jedidiahsolomon.name.ng"
+          >contact@jedidiahsolomon.name.ng</a
         >
         or <a href="https://wa.me/2347062957194">Chat on WhatsApp</a>
       </div>
@@ -230,15 +230,18 @@
 
       function resetInactivityTimer() {
         clearTimeout(inactivityTimer);
-        inactivityTimer = setTimeout(() => {
-          window.location.href = "index.html";
-        }, 5 * 60 * 1000);
+        inactivityTimer = setTimeout(
+          () => {
+            window.location.href = "index.html";
+          },
+          5 * 60 * 1000,
+        );
       }
 
       ["mousemove", "mousedown", "keypress", "touchstart", "scroll"].forEach(
         (event) => {
           document.addEventListener(event, resetInactivityTimer);
-        }
+        },
       );
 
       resetInactivityTimer();

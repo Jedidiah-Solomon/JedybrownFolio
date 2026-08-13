@@ -79,7 +79,7 @@ I am a dedicated and detail-oriented software developer specializing in creating
 
 ## Contact
 
-Email: [onwubikojedidiah@gmail.com] <br>
+Email: [contact@jedidiahsolomon.name.ng] <br>
 [LinkedIn Profile](https://www.linkedin.com/in/jedidiahonwubiko/) <br>
 [GitHub Profile](https://github.com/Jedidiah-Solomon)
 
